@@ -29,3 +29,11 @@ Here we release the pre-trained model trained on [Rain100L](https://www.icst.pku
 CUDA_VISIBLE_DEVICES=0 python test.py
 ```
 - The test results will be saved to a directory here: `./results`.
+
+## 🤖 Training
+- You need **create** a directory `./trainData` and put the degraded training data to it.
+- Train a model:
+```bash
+CUDA_VISIBLE_DEVICES=0 python train.py
+```
+- Loss curve and checkpoint can be found in the directory `./log`.
