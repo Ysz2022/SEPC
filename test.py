@@ -11,16 +11,10 @@ from model.SEPC import SEPC
 import time
 
 
-parser = argparse.ArgumentParser(description="PReNet_Test")
+parser = argparse.ArgumentParser(description="Test")
 parser.add_argument("--logdir", type=str, default="logs/SEPC_derainL/", help='path to model and log files')
-parser.add_argument("--data_path", type=str, default="test/rain100/blended", help='path to training data')
+parser.add_argument("--data_path", type=str, default="testData/rain100/blended", help='path to training data')
 parser.add_argument("--save_path", type=str, default="results/100", help='path to save results')
-# parser.add_argument("--data_path", type=str, default="test/rain12/rainy", help='path to training data')
-# parser.add_argument("--save_path", type=str, default="results/12", help='path to save results')
-# parser.add_argument("--data_path", type=str, default="test/Practical", help='path to training data')
-# parser.add_argument("--save_path", type=str, default="results/Practice", help='path to save results')
-# parser.add_argument("--data_path", type=str, default="testH/blended", help='path to training data')
-# parser.add_argument("--save_path", type=str, default="results/100H", help='path to save results')
 parser.add_argument("--use_GPU", type=bool, default=True, help='use GPU or not')
 parser.add_argument("--gpu_id", type=str, default="0", help='GPU id')
 parser.add_argument("--recurrent_iter", type=int, default=6, help='number of recursive stages')
