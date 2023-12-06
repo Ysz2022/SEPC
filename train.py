@@ -32,8 +32,6 @@ parser.add_argument("--data_path",type=str, default="trainData/RainTrainH",help=
 parser.add_argument("--use_gpu", type=bool, default=True, help='use GPU or not')
 opt = parser.parse_args()
 
-os.makedirs(opt.save_path)
-
 def batch_PSNR(img, imclean, data_range):
     Img = img.data.cpu().numpy().astype(np.float32)
     Iclean = imclean.data.cpu().numpy().astype(np.float32)
@@ -43,8 +41,8 @@ def batch_PSNR(img, imclean, data_range):
     return (PSNR/Img.shape[0])
 
 def main():
+    os.makedirs(opt.save_path, exist_ok=True)
     losses = []
-
     print('Loading dataset ...\n')
     dataset_train = Dataset(data_path=opt.data_path)
     num_train = dataset_train.__len__()
