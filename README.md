@@ -12,8 +12,13 @@
 ## 🔑 Setup
 Type the command:
 ```
-pip install torch==1.12.0+cu113 torchvision==0.13.0+cu113 torchaudio==0.12.0 --extra-index-url https://download.pytorch.org/whl/cu113
+pip install h5py
 pip install opencv-python
+pip install numpy
+pip install scikit-image
+pip install scikit-video
+pip install matplotlib
+conda install pytorch==1.12.0 torchvision==0.13.0 torchaudio==0.12.0 cudatoolkit=11.3 -c pytorch
 ```
 
 ## 🧩 Download
