@@ -4,4 +4,26 @@
 
 
 
-code is coming soon…
+## Prerequisites
+- Linux or macOS
+- Python 3.7
+- NVIDIA GPU + CUDA CuDNN
+
+## 🔑 Setup
+Type the command:
+```
+pip install -r requirements.txt
+```
+
+## 🧩 Download
+You need **create** a directory `./logs/[YOUR-MODEL]` (e.g., `./logs/SEPC_derainL`). \
+Download the pre-trained model and put it into `./logs/[YOUR-MODEL]`. \
+Here we release the pre-trained model trained on [Rain100L](https://www.icst.pku.edu.cn/struct/Projects/joint_rain_removal.html):
+- [**Model**](https://drive.google.com/file/d/1bbEHVtVew6JCnwgktXJurJxibaPkQlNG/view?usp=sharing)
+
+## 🚀 Quick Run
+- Test the model with the pre-trained weights:
+```bash
+CUDA_VISIBLE_DEVICES=0 python test.py
+```
+- The test results will be saved to a directory here: `./results`.
