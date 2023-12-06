@@ -22,6 +22,7 @@ Here we release the pre-trained model trained on [Rain100L](https://www.icst.pku
 - [**Model**](https://drive.google.com/file/d/1bbEHVtVew6JCnwgktXJurJxibaPkQlNG/view?usp=sharing)
 
 ## 🚀 Quick Run
+- You need **create** a directory `./testData` and put the degraded images to it.
 - Test the model with the pre-trained weights:
 ```bash
 CUDA_VISIBLE_DEVICES=0 python test.py
