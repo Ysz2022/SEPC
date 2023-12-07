@@ -19,8 +19,9 @@ conda install pytorch==1.12.0 torchvision==0.13.0 torchaudio==0.12.0 cudatoolkit
 ## 🧩 Download
 You need **create** a directory `./logs/[YOUR-MODEL]` (e.g., `./logs/SEPC_derainL`). \
 Download the pre-trained model and put it into `./logs/[YOUR-MODEL]`. \
-Here we release the pre-trained model trained on [Rain100L](https://www.icst.pku.edu.cn/struct/Projects/joint_rain_removal.html):
-- [**Model**](https://drive.google.com/file/d/1bbEHVtVew6JCnwgktXJurJxibaPkQlNG/view?usp=sharing)
+Here we release the pre-trained model trained on [Rain100L](https://www.icst.pku.edu.cn/struct/Projects/joint_rain_removal.html) and [Rain100H](https://www.icst.pku.edu.cn/struct/Projects/joint_rain_removal.html):
+- [**Model(Rain100L)**](https://drive.google.com/file/d/1bbEHVtVew6JCnwgktXJurJxibaPkQlNG/view?usp=sharing)
+- [**Model(Rain100H)**](https://drive.google.com/file/d/1ZpdjnK-YLtYJZsPHfZU6FxxVbklJtgTn/view?usp=sharing)
 
 ## 🚀 Quick Run
 - You need **create** a directory `./testData` and put the degraded images to it.
