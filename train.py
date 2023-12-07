@@ -92,19 +92,9 @@ def main():
             final_out, out_train, x1_1, x2_1 = model(input_train)
 
             loss = 200 * l1(target_train, out_train) / (l1(x1_1, x2_1) + 100 * l1(input_train, out_train))
-            # loss_mse = 100 * mse(final_out, target_train)
             loss2 = 2 * l1(target_train, final_out) / l1(input_train, final_out)
-            # loss2 = l1(target_train, final_out) / l1(input_train, final_out)
 
-            print('loss2: ', loss2)
-            print('分式: ', loss)
-            print('___________________________________________________________')
             loss += loss2
-
-            # vgg_loss = criterionVgg(target_train, final_out) / criterionVgg(input_train, final_out)
-            # loss += 0.1 * vgg_loss
-            # print('vgg_loss: ', vgg_loss)
-            # print('___________________________________________________________')
 
             loss.backward()
             optimizer.step()
@@ -128,17 +118,6 @@ def main():
 
 
 if __name__ == "__main__":
-    # if opt.preprocess:
-    #     if opt.data_path.find('RainTrainH') != -1:
-    #         prepare_data_RainTrainH(data_path=opt.data_path, patch_size=100, stride=80)
-    #     elif opt.data_path.find('RainTrainL') != -1:
-    #         prepare_data_RainTrainL(data_path=opt.data_path, patch_size=100, stride=80)
-    #     elif opt.data_path.find('Rain12600') != -1:
-    #         prepare_data_Rain12600(data_path=opt.data_path, patch_size=100, stride=100)
-    #     else:
-    #         print('unkown datasets: please define prepare data function in DerainDataset.py')
-
     # prepare_data_RainTrainL(data_path=opt.data_path, patch_size=128, stride=80)
-    # prepare_data_Rain12600(data_path=opt.data_path, patch_size=128, stride=80)
     prepare_data_RainTrainH(data_path=opt.data_path, patch_size=128, stride=80)
     main()
