@@ -47,3 +47,16 @@ CUDA_VISIBLE_DEVICES=0 python test.py
 CUDA_VISIBLE_DEVICES=0 python train.py
 ```
 - Loss curve and checkpoint can be found in the directory `./log`.
+
+## 📌 Citation
+
+If you find this code useful for your research, please use the following BibTeX entry.
+
+```bibtex
+@ARTICLE{10363208,
+  author={Jiang, Zhiying and Yang, Shuzhou and Liu, Jinyuan and Fan, Xin and Liu, Risheng},
+  journal={IEEE Transactions on Instrumentation and Measurement}, 
+  title={Multi-scale Synergism Ensemble Progressive and Contrastive Investigation for Image Restoration}, 
+  year={2023},
+  doi={10.1109/TIM.2023.3343823}}
+```
