@@ -56,7 +56,10 @@ If you find this code useful for your research, please use the following BibTeX 
 @ARTICLE{10363208,
   author={Jiang, Zhiying and Yang, Shuzhou and Liu, Jinyuan and Fan, Xin and Liu, Risheng},
   journal={IEEE Transactions on Instrumentation and Measurement}, 
-  title={Multi-scale Synergism Ensemble Progressive and Contrastive Investigation for Image Restoration}, 
-  year={2023},
+  title={Multiscale Synergism Ensemble Progressive and Contrastive Investigation for Image Restoration}, 
+  year={2024},
+  volume={73},
+  number={},
+  pages={1-14},
   doi={10.1109/TIM.2023.3343823}}
 ```
